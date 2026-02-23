@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marcos & Mariana — Wedding Invitation</title>
+  <meta name="description" content="Wedding invitation — Marcos & Mariana" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Elegant + readable fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Desktop background frame -->
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <main class="phone-frame" id="top">
+    <!-- HERO / ENVELOPE -->
+    <header class="hero reveal">
+      <div class="hero__envelope">
+        <div class="hero__inner">
+          <div class="names">
+            <div class="names__script">Marcos</div>
+            <div class="names__amp">&amp;</div>
+            <div class="names__script">Mariana</div>
+          </div>
+
+          <div class="hero__date">06.12.2025</div>
+        </div>
+      </div>
+
+      <div class="floral-divider" aria-hidden="true"></div>
+
+      <section class="card ivory reveal">
+        <p class="quote">
+          “And over all these virtues put on love, which binds them all together in perfect unity.”
+          <span class="quote__ref">Colossians 3:14</span>
+        </p>
+
+        <div class="monogram">
+          <span>M</span><span>M</span>
+        </div>
+
+        <h2 class="headline">WE’RE GETTING MARRIED!</h2>
+      </section>
+    </header>
+
+    <!-- PHOTO 1 -->
+    <section class="section reveal">
+      <div class="photo-block">
+        <img src="assets/images/photo-1.jpg" alt="Couple photo" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- MUSIC -->
+    <section class="section section--burgundy reveal">
+      <div class="section__content">
+        <h3 class="section-title">Press play to our song</h3>
+
+        <div class="player" role="group" aria-label="Music player">
+          <audio id="audio" preload="metadata">
+            <source src="assets/audio/song.mp3" type="audio/mpeg" />
+          </audio>
+
+          <button class="icon-btn" id="btnPrev" type="button" aria-label="Previous">
+            <span class="icon">⏮</span>
+          </button>
+
+          <button class="play-btn" id="btnPlay" type="button" aria-label="Play / Pause">
+            <span id="playIcon">▶</span>
+          </button>
+
+          <button class="icon-btn" id="btnNext" type="button" aria-label="Next">
+            <span class="icon">⏭</span>
+          </button>
+
+          <div class="player__bar" aria-label="Progress">
+            <div class="player__time">
+              <span id="tCur">0:00</span>
+              <span id="tDur">0:00</span>
+            </div>
+            <input id="seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek" />
+          </div>
+        </div>
+
+        <div class="blessing">
+          <p>
+            With the love that unites us, God’s blessing, and the support of our parents:
+          </p>
+          <p class="names-list">
+            Paola Mendez Sanchez<br />
+            Oliver Perez Gutierrez
+          </p>
+          <p class="names-list">
+            Monica Lopez Tornos<br />
+            Gustavo Delgado Aguas
+          </p>
+          <p class="small">
+            We will unite our lives in the sacrament of marriage
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="section section--burgundy reveal">
+      <div class="section__content">
+        <div class="date-strip">
+          <div class="date-strip__month">DECEMBER</div>
+          <div class="date-strip__mid">
+            <span class="pill">SATURDAY</span>
+            <span class="date-strip__day">06</span>
+            <span class="pill">2025</span>
+          </div>
+        </div>
+
+        <div class="countdown">
+          <div class="countdown__label">TIME LEFT</div>
+          <div class="countdown__grid" id="countdown">
+            <div class="timebox">
+              <div class="timebox__num" data-k="days">00</div>
+              <div class="timebox__lab">Days</div>
+            </div>
+            <div class="timebox">
+              <div class="timebox__num" data-k="hours">00</div>
+              <div class="timebox__lab">Hours</div>
+            </div>
+            <div class="timebox">
+              <div class="timebox__num" data-k="mins">00</div>
+              <div class="timebox__lab">Min</div>
+            </div>
+            <div class="timebox">
+              <div class="timebox__num" data-k="secs">00</div>
+              <div class="timebox__lab">Sec</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floral-divider floral-divider--invert" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- PHOTO 2 -->
+    <section class="section reveal">
+      <div class="photo-block">
+        <img src="assets/images/photo-2.jpg" alt="Couple photo" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- RECEPTION -->
+    <section class="section reveal">
+      <div class="card ivory">
+        <div class="center">
+          <div class="info-time">5:00 PM</div>
+          <div class="info-title">RECEPTION</div>
+          <div class="info-sub">SALÓN VENDIMIA</div>
+          <div class="info-sub small">Santa Cruz de la Sierra</div>
+
+          <a class="btn" href="https://maps.google.com" target="_blank" rel="noreferrer">
+            View location
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ITINERARY -->
+    <section class="section reveal">
+      <div class="card ivory">
+        <h3 class="section-title section-title--dark">SCHEDULE</h3>
+
+        <div class="timeline">
+          <div class="timeline__line" aria-hidden="true"></div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__time">2:30 PM</div>
+            <div class="timeline__text">Ceremony</div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__time">4:30 PM</div>
+            <div class="timeline__text">Reception</div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__time">5:30 PM</div>
+            <div class="timeline__text">Toasts</div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__time">6:00 PM</div>
+            <div class="timeline__text">Dinner / Banquet</div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__time">7:30 PM</div>
+            <div class="timeline__text">Party</div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__time">9:00 PM</div>
+            <div class="timeline__text">“Crazy Hour”</div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__time">11:30 PM</div>
+            <div class="timeline__text">End</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DRESS CODE -->
+    <section class="section reveal">
+      <div class="card ivory">
+        <h3 class="section-title section-title--dark">DRESS CODE</h3>
+        <div class="center">
+          <div class="badge">Formal</div>
+          <p class="small muted">
+            Kindly, we ask you to avoid wearing white.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GIFTS + STAY + RSVP -->
+    <section class="section section--burgundy reveal" id="rsvp">
+      <div class="section__content">
+        <div class="stack">
+          <h3 class="section-title">GIFT SUGGESTION</h3>
+          <p class="muted">
+            Your presence is the best gift, but if you’d like to give us something, here’s an option:
+          </p>
+          <div class="gift-chip">
+            <span class="gift-icon">✉</span>
+            <span>Envelope shower (cash gift)</span>
+          </div>
+        </div>
+
+        <div class="stack">
+          <h3 class="section-title">ACCOMMODATION SUGGESTION</h3>
+          <div class="btn-row">
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">Hotel Regina Resort</a>
+            <a class="btn btn--ghost" href="#" target="_blank" rel="noreferrer">Casa Villa Albina</a>
+          </div>
+        </div>
+
+        <div class="stack">
+          <h3 class="section-title">CONFIRM ATTENDANCE</h3>
+          <p class="muted">Please confirm your attendance before November 1st.</p>
+
+          <form class="rsvp-form" id="rsvpForm">
+            <label class="field">
+              <span>Full name</span>
+              <input name="name" type="text" autocomplete="name" required placeholder="Your name" />
+            </label>
+
+            <label class="field">
+              <span>Will you attend?</span>
+              <select name="attending" required>
+                <option value="" selected disabled>Choose…</option>
+                <option value="yes">Yes, I’ll be there</option>
+                <option value="no">Sorry, I can’t</option>
+              </select>
+            </label>
+
+            <div class="grid2">
+              <label class="field">
+                <span>Guests</span>
+                <input name="guests" type="number" min="0" max="10" value="1" />
+              </label>
+              <label class="field">
+                <span>Phone / WhatsApp (optional)</span>
+                <input name="phone" type="tel" autocomplete="tel" placeholder="+591 …" />
+              </label>
+            </div>
+
+            <label class="field">
+              <span>Notes (allergies, message, etc.)</span>
+              <textarea name="notes" rows="3" placeholder="Write here…"></textarea>
+            </label>
+
+            <button class="btn btn--solid" type="submit" id="rsvpSubmit">
+              RSVP here
+            </button>
+
+            <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="thanks">
+            <div class="muted center">We hope you can join us</div>
+            <div class="thanks__script">Thank you very much!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTO 3 -->
+    <section class="section reveal">
+      <div class="photo-block">
+        <img src="assets/images/photo-3.jpg" alt="Couple photo" loading="lazy" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a class="to-top" href="#top">Back to top ↑</a>
+      <div class="footer__small">Made with love • Hosted on GitHub Pages</div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
