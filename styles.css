@@ -79,11 +79,11 @@ body{
 }
 
 .hero-collage__scale{
-  width: 440px;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   transform-origin: top center;
 }
-
 .hero-collage__stage{
   position: relative;
   width: 440px;
