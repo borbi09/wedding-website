@@ -1,8 +1,9 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <title>Сели и Боби - Свадбени покани</title>
   <meta name="description" content="Wedding invitation — Marcos & Mariana" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,34 +19,52 @@
   <div class="page-bg" aria-hidden="true"></div>
 
   <main class="phone-frame" id="top">
-    <!-- HERO / ENVELOPE -->
     <header class="hero reveal">
-      <div class="hero__envelope">
-        <div class="hero__inner">
-          <div class="names">
-            <div class="names__script">Сели</div>
-            <div class="names__amp">&amp;</div>
-            <div class="names__script">Боби</div>
-          </div>
-
-          <div class="hero__date">08.09.2026</div>
-        </div>
+	  <!-- HERO COLLAGE -->
+<header class="hero reveal">
+  <div class="hero-collage">
+    <div class="hero-collage__stage">
+      <div class="hero-item-wrap hero-item-wrap--envelope-top">
+        <!--<img class="hero-photo hero-photo--envelope" src="assets/images/" alt=""> -->
+        <img class="hero-item hero-item--envelope-top" src="assets/images/envelope-top.png" alt="">
+      </div>
+      <img class="hero-item hero-item--note" src="assets/images/note.png" alt="" loading="eager" />
+      <img class="hero-item hero-item--main-card" src="assets/images/main-card.png" alt="Wedding invitation card" loading="eager" />
+      <img class="hero-item hero-item--envelope-bottom" src="assets/images/envelope-bottom.png" alt="" loading="eager" />
+      <img class="hero-item hero-item--oval-tag" src="assets/images/oval-tag.png" alt="" loading="lazy" />
+      <img class="hero-item hero-item--details" src="assets/images/details.png" alt="" loading="lazy" />
+      <img class="hero-item hero-item--rsvp" src="assets/images/rsvp.png" alt="" loading="lazy" />
+      <div class="hero-item-wrap hero-item-wrap--polaroid">
+        <img class="hero-photo hero-photo--polaroid" src="assets/images/polaroid-photo.jpg" alt="">
+        <img class="hero-item hero-item--polaroid" src="assets/images/polaroid.png" alt="">
       </div>
 
-      <div class="floral-divider" aria-hidden="true"></div>
+      <img class="hero-item hero-item--flower-a" src="assets/images/flower-c.png" alt="" loading="lazy" />
+      <img class="hero-item hero-item--flower-b" src="assets/images/flower-b.png" alt="" loading="lazy" />
+      <img class="hero-item hero-item--flower-c" src="assets/images/flower-a.png" alt="" loading="lazy" />
 
-      <section class="card ivory reveal">
-        <p class="quote">
-          “And over all these virtues put on love, which binds them all together in perfect unity.”
-          <span class="quote__ref">Colossians 3:14</span>
-        </p>
+    </div>
+  </div>
 
-        <div class="monogram">
-          <span>M</span><span>M</span>
-        </div>
+  <div class="save-date-band">
+    <div class="save-date-band__inner">
+      <div class="save-date-band__eyebrow">Запазете Датата</div>
 
-        <h2 class="headline">WE’RE GETTING MARRIED!</h2>
-      </section>
+      <div class="save-date-band__date">
+        <span class="save-date-band__day">8ми</span>
+        <span class="save-date-band__month">Септември</span>
+        <span class="save-date-band__year">2026</span>
+      </div>
+
+      <div class="save-date-band__ornament" aria-hidden="true">
+	  <img src="assets/images/save-date-ornament.png" alt="">
+	  </div>
+
+      <div class="save-date-band__time">В 12:00 Часа</div>
+      <div class="save-date-band__venue">Bedouin Forest Residence</div>
+    </div>
+  </div>
+</header>
     </header>
 
     <!-- PHOTO 1 -->
@@ -55,93 +74,103 @@
       </div>
     </section>
 
+    <!-- MUSIC + COUNTDOWN -->
+<section class="section section--burgundy reveal">
+  <div class="section__content">
+
     <!-- MUSIC -->
-    <section class="section section--burgundy reveal">
-      <div class="section__content">
-        <h3 class="section-title">Press play to our song</h3>
+    <h3 class="section-title">Press play to our song</h3>
 
-        <div class="player" role="group" aria-label="Music player">
-          <audio id="audio" preload="metadata">
-            <source src="assets/audio/song.mp3" type="audio/mpeg" />
-          </audio>
+    <div class="player" role="group" aria-label="Music player">
+      <audio id="audio" preload="metadata">
+        <source src="assets/audio/song.mp3" type="audio/mpeg" />
+      </audio>
 
-          <button class="icon-btn" id="btnPrev" type="button" aria-label="Previous">
-            <span class="icon">⏮</span>
-          </button>
+      <button class="icon-btn" id="btnPrev" type="button">
+        ⏮
+      </button>
 
-          <button class="play-btn" id="btnPlay" type="button" aria-label="Play / Pause">
-            <span id="playIcon">▶</span>
-          </button>
+      <button class="play-btn" id="btnPlay" type="button">
+        <span id="playIcon">▶</span>
+      </button>
 
-          <button class="icon-btn" id="btnNext" type="button" aria-label="Next">
-            <span class="icon">⏭</span>
-          </button>
+      <button class="icon-btn" id="btnNext" type="button">
+        ⏭
+      </button>
 
-          <div class="player__bar" aria-label="Progress">
-            <div class="player__time">
-              <span id="tCur">0:00</span>
-              <span id="tDur">0:00</span>
-            </div>
-            <input id="seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek" />
-          </div>
+      <div class="player__bar">
+        <div class="player__time">
+          <span id="tCur">0:00</span>
+          <span id="tDur">0:00</span>
         </div>
-
-        <div class="blessing">
-          <p>
-            With the love that unites us, God’s blessing, and the support of our parents:
-          </p>
-          <p class="names-list">
-            Paola Mendez Sanchez<br />
-            Oliver Perez Gutierrez
-          </p>
-          <p class="names-list">
-            Monica Lopez Tornos<br />
-            Gustavo Delgado Aguas
-          </p>
-          <p class="small">
-            We will unite our lives in the sacrament of marriage
-          </p>
-        </div>
+        <input id="seek" type="range" min="0" max="100" value="0" step="0.1">
       </div>
-    </section>
+    </div>
+
+    <div class="blessing">
+      <p>
+        With the love that unites us, God’s blessing, and the support of our parents:
+      </p>
+
+      <p class="names-list">
+        Paola Mendez Sanchez<br>
+        Oliver Perez Gutierrez
+      </p>
+
+      <p class="names-list">
+        Monica Lopez Tornos<br>
+        Gustavo Delgado Aguas
+      </p>
+
+      <p class="small">
+        We will unite our lives in the sacrament of marriage
+      </p>
+    </div>
+
+    <!-- DIVIDER -->
+    <div style="height:30px"></div>
 
     <!-- COUNTDOWN -->
-    <section class="section section--burgundy reveal">
-      <div class="section__content">
-        <div class="date-strip">
-          <div class="date-strip__month">DECEMBER</div>
-          <div class="date-strip__mid">
-            <span class="pill">SATURDAY</span>
-            <span class="date-strip__day">06</span>
-            <span class="pill">2025</span>
-          </div>
-        </div>
+    <div class="date-strip">
+      <div class="date-strip__month">SEPTEMBER</div>
 
-        <div class="countdown">
-          <div class="countdown__label">TIME LEFT</div>
-          <div class="countdown__grid" id="countdown">
-            <div class="timebox">
-              <div class="timebox__num" data-k="days">00</div>
-              <div class="timebox__lab">Days</div>
-            </div>
-            <div class="timebox">
-              <div class="timebox__num" data-k="hours">00</div>
-              <div class="timebox__lab">Hours</div>
-            </div>
-            <div class="timebox">
-              <div class="timebox__num" data-k="mins">00</div>
-              <div class="timebox__lab">Min</div>
-            </div>
-            <div class="timebox">
-              <div class="timebox__num" data-k="secs">00</div>
-              <div class="timebox__lab">Sec</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="floral-divider floral-divider--invert" aria-hidden="true"></div>
+      <div class="date-strip__mid">
+        <span class="pill">Wednesday</span>
+        <div class="date-strip__day">09</div>
+        <span class="pill">2026</span>
       </div>
-    </section>
+    </div>
+
+    <div class="countdown">
+      <div class="countdown__label">TIME LEFT</div>
+
+      <div class="countdown__grid" id="countdown">
+
+        <div class="timebox">
+          <div class="timebox__num" data-k="days">00</div>
+          <div class="timebox__lab">Days</div>
+        </div>
+
+        <div class="timebox">
+          <div class="timebox__num" data-k="hours">00</div>
+          <div class="timebox__lab">Hours</div>
+        </div>
+
+        <div class="timebox">
+          <div class="timebox__num" data-k="mins">00</div>
+          <div class="timebox__lab">Min</div>
+        </div>
+
+        <div class="timebox">
+          <div class="timebox__num" data-k="secs">00</div>
+          <div class="timebox__lab">Sec</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <!-- PHOTO 2 -->
     <section class="section reveal">

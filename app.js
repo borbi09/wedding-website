@@ -36,9 +36,9 @@ const observer = new IntersectionObserver(
 revealElements.forEach((el) => observer.observe(el));
 
 // ===========================
-// Countdown (set your date here)
+// Countdown (premium soft animation)
 // ===========================
-const WEDDING_DATE = new Date("2025-12-06T17:00:00"); // Local time
+const WEDDING_DATE = new Date(2026, 9, 9, 14, 0, 0); // Local time
 const cdRoot = document.getElementById("countdown");
 
 function pad2(n) {
@@ -48,19 +48,26 @@ function pad2(n) {
 function setCd(k, val) {
   const el = cdRoot.querySelector(`[data-k="${k}"]`);
   if (!el) return;
-  // Tiny “tick” animation when value changes
-  if (el.textContent !== val) {
-    el.textContent = val;
-    el.animate(
-      [{ transform: "translateY(-2px)", opacity: 0.6 }, { transform: "translateY(0)", opacity: 1 }],
-      { duration: 220, easing: "ease-out" }
-    );
-  }
+  if (el.textContent === val) return;
+
+  el.animate(
+    [
+      { opacity: 0, transform: "translateY(8px)" },
+      { opacity: 1, transform: "translateY(0)" }
+    ],
+    {
+      duration: 220,
+      easing: "ease-out"
+    }
+  );
+
+  el.textContent = val;
 }
 
 function tickCountdown() {
   const now = new Date();
   const diff = WEDDING_DATE - now;
+
   if (diff <= 0) {
     setCd("days", "00");
     setCd("hours", "00");
@@ -68,13 +75,14 @@ function tickCountdown() {
     setCd("secs", "00");
     return;
   }
+
   const totalSec = Math.floor(diff / 1000);
   const days = Math.floor(totalSec / (3600 * 24));
   const hours = Math.floor((totalSec % (3600 * 24)) / 3600);
   const mins = Math.floor((totalSec % 3600) / 60);
   const secs = totalSec % 60;
 
-  setCd("days", pad2(days));
+  setCd("days", String(days));
   setCd("hours", pad2(hours));
   setCd("mins", pad2(mins));
   setCd("secs", pad2(secs));

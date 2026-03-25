@@ -8,7 +8,7 @@
   --shadow: 0 18px 60px rgba(0,0,0,.18);
   --radius: 18px;
   --radius-lg: 26px;
-  --maxw: 480px;
+  --maxw: 440px;
 }
 
 *{box-sizing:border-box}
@@ -32,7 +32,9 @@ body{
 }
 
 .phone-frame{
-  width:min(100%, var(--maxw));
+  width: 440px;
+  min-width: 440px;
+  max-width: 440px;
   margin: 0 auto;
   background: var(--ivory);
   min-height:100vh;
@@ -44,92 +46,261 @@ body{
 .section{padding: 18px 18px}
 .section--burgundy{
   padding: 22px 18px;
-  background: linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-2) 100%);
+  position: relative;
   color: var(--ivory);
+  background: url("assets/images/background-burgundy.jpg") center center / cover no-repeat;
+  overflow: hidden;
+}
+.section--burgundy > *{
+  position: relative;
+  z-index: 1;
 }
 .section__content{max-width: 420px; margin: 0 auto;}
 .stack{margin-bottom: 22px;}
 .stack:last-child{margin-bottom:0}
 
-/* Hero / envelope */
+/* Hero collage */
 .hero{
-  background: linear-gradient(180deg, var(--burgundy) 0%, var(--burgundy-2) 100%);
+  position: relative;
   color: var(--ivory);
-  padding: 18px 18px 0;
-  position:relative;
+  padding: 0;
+  background: url("assets/images/background-burgundy.jpg") center center / cover no-repeat;
+  overflow: hidden;
 }
-.hero__envelope{
-  border-radius: var(--radius-lg);
-  padding: 22px 16px 16px;
-  background:
-    linear-gradient(180deg, rgba(255,255,255,.10), rgba(0,0,0,.10)),
-    url("assets/images/hero-envelope.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow:hidden;
-  position:relative;
-  min-height: 220px;
-  display:flex;
-  align-items:flex-start;
-  justify-content:center;
-  text-align:center;
+.hero > *{
+  position: relative;
+  z-index: 1;
 }
-.hero__envelope::after{
-  /* subtle vignette */
-  content:"";
+
+.hero-collage{
+  padding: 10px 10px 0;
+}
+
+.hero-collage__stage{
+  position: relative;
+  width: 440px;
+  min-width: 440px;
+  max-width: 440px;
+  margin: 0 auto;
+  height: 900px;
+  left: -13px;
+}
+/* Base item */
+.hero-item{
+  position: absolute;
+  display: block;
+  height: auto;
+  max-width: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  transform-origin: center center;
+}
+
+/* Main composition — matched to the reference layout */
+.hero-item--note{
+  top: 92px;
+  right: 30px;
+  width: 200px;
+  transform: rotate(0deg);
+  z-index: 4;
+}
+
+.hero-item--main-card{
+  top: 228px;
+  left: 100px;
+  width: 160px;
+  transform: rotate(0deg);
+  z-index: 5;
+}
+
+.hero-item--envelope-bottom{
+  top: 410px;
+  right: 35px;
+  width: 180px;
+  transform: rotate(0deg);
+  z-index: 1;
+}
+
+.hero-item--oval-tag{
+  top: 435px;
+  left: 45px;
+  width: 130px;
+  transform: rotate(0deg);
+  z-index: 5;
+}
+
+.hero-item--details{
+  top: 565px;
+  left: 90px;
+  width: 130px;
+  transform: rotate(0deg);
+  z-index: 5;
+}
+
+.hero-item--rsvp{
+  top: 520px;
+  right: 35px;
+  width: 200px;
+  transform: rotate(0deg);
+  z-index: 6;
+}
+
+.hero-item-wrap{
   position:absolute;
-  inset:0;
-  background: radial-gradient(circle at 50% 30%, rgba(0,0,0,.05), rgba(0,0,0,.35));
-  pointer-events:none;
 }
-.hero__inner{
-  position:relative;
-  z-index:1;
-  padding-top: 6px;
+.hero-item-wrap--envelope-top{
+  top: 12px;
+  left: 0;
+  width: 320px;
+  z-index: 2;
 }
 
-.names{margin-top: 10px;}
-.names__script{
-  font-family: "Great Vibes", cursive;
-  font-size: 54px;
-  line-height: 1.05;
-  letter-spacing: .5px;
-  text-shadow: 0 10px 26px rgba(0,0,0,.25);
-}
-.names__amp{
-  font-family: "Cinzel", serif;
-  font-size: 18px;
-  opacity:.95;
-  margin: 2px 0 4px;
-}
-.hero__date{
-  margin-top: 16px;
-  font-family:"Cinzel", serif;
-  letter-spacing: .18em;
-  font-size: 12px;
-  opacity:.95;
+.hero-item-wrap--polaroid{
+  top: 640px;
+  right: 65px;
+  width: 150px;
+  transform: rotate(13deg);
+  z-index: 7;
 }
 
-/* Floral divider (pure CSS “botanical vibe”) */
-.floral-divider{
-  height: 46px;
-  margin: 14px auto 0;
+.hero-item--envelope-top,
+.hero-item--polaroid{
+  position: relative;
   width: 100%;
-  background:
-    radial-gradient(10px 10px at 15% 60%, rgba(255,255,255,.65), transparent 60%),
-    radial-gradient(8px 8px at 24% 46%, rgba(255,255,255,.45), transparent 60%),
-    radial-gradient(9px 9px at 36% 62%, rgba(255,255,255,.55), transparent 60%),
-    radial-gradient(7px 7px at 49% 42%, rgba(255,255,255,.38), transparent 60%),
-    radial-gradient(9px 9px at 62% 64%, rgba(255,255,255,.52), transparent 60%),
-    radial-gradient(7px 7px at 73% 45%, rgba(255,255,255,.40), transparent 60%),
-    radial-gradient(10px 10px at 85% 60%, rgba(255,255,255,.62), transparent 60%);
-  opacity:.8;
-  filter: blur(.2px);
+  height: auto;
+  display:block;
+  z-index: 2;
 }
-.floral-divider--invert{
-  opacity:.22;
+.hero-photo--envelope{
+  top: 34px;
+  left: 52px;
+  width: 215px;
+  height: 145px;
+  clip-path: polygon(0 28%, 50% 0, 100% 28%, 100% 100%, 0 100%);
+  z-index: 6;
 }
 
+.hero-photo{
+  position:absolute;
+  object-fit: cover;
+  z-index: 1;
+}
+.hero-item-wrap--polaroid{
+  position: absolute;
+  top: 640px;
+  right: 65px;
+  width: 150px;
+  transform: rotate(13deg);
+  z-index: 7;
+}
+
+.hero-photo--polaroid{
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  width: 134px;
+  height: 140px;
+  object-fit: cover;
+  z-index: 8;
+}
+
+/* Decorative flowers */
+.hero-item--flower-a{
+  top: 185px;
+  left: 68px;
+  width: 120px;
+  transform: rotate(-2deg);
+  z-index: 6;
+}
+
+.hero-item--flower-b{
+  top: 345px;
+  right: 10px;
+  width: 104px;
+  transform: rotate(6deg);
+  z-index: 6;
+}
+
+.hero-item--flower-c{
+  top: 630px;
+  left: 40px;
+  width: 92px;
+  transform: rotate(-8deg);
+  z-index: 6;
+}
+
+
+/* Save-the-date band */
+.save-date-band{
+  padding: 0px 22px 54px;
+}
+
+.save-date-band__inner{
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.save-date-band__eyebrow{
+  font-family:"Cinzel", serif;
+  font-size:13px;
+  letter-spacing:.25em;
+  opacity:.9;
+}
+
+.save-date-band__date{
+  margin-top: 18px;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.save-date-band__day,
+.save-date-band__year{
+  font-family:"Cinzel", serif;
+  font-size:34px;
+  font-weight:400;
+  letter-spacing:.06em;
+}
+.save-date-band__month{
+  font-family: "Great Vibes", cursive;
+  font-size: 84px;
+  line-height: .9;
+}
+
+.save-date-band__ornament{
+  margin: 22px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.save-date-band__ornament img{
+  height: 80px;
+  width: auto;
+  transform: scaleX(1.6);
+}
+
+.save-date-band__time{
+  margin-top: 24px;
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  letter-spacing: .12em;
+}
+
+.save-date-band__venue{
+  margin-top: 12px;
+  font-size: 16px;
+  opacity:.9;
+  line-height: 1.45;
+  color: rgba(255,255,255,.92);
+}
+.save-date-band{
+  color:#f6f1ea;
+  text-shadow:none;
+}
 .card{
   border-radius: var(--radius);
   padding: 18px 16px;
@@ -138,40 +309,6 @@ body{
   border: 1px solid rgba(0,0,0,.06);
 }
 .ivory{background: var(--ivory);}
-
-.quote{
-  margin: 0;
-  font-size: 13px;
-  line-height: 1.55;
-  color: var(--muted);
-  text-align:center;
-}
-.quote__ref{
-  display:block;
-  margin-top: 6px;
-  font-family:"Cinzel", serif;
-  font-size: 12px;
-  letter-spacing:.08em;
-  opacity:.9;
-}
-
-.monogram{
-  display:flex;
-  gap: 16px;
-  justify-content:center;
-  margin: 16px 0 10px;
-  font-family:"Cinzel", serif;
-  font-size: 44px;
-  letter-spacing:.12em;
-}
-.headline{
-  margin: 0;
-  text-align:center;
-  font-family:"Cinzel", serif;
-  font-weight: 600;
-  letter-spacing:.12em;
-  font-size: 12px;
-}
 
 /* Photos */
 .photo-block{
@@ -287,7 +424,7 @@ body{
 
 .countdown{
   text-align:center;
-  padding: 14px 0 4px;
+  padding: 6px 0 4px;
 }
 .countdown__label{
   font-family:"Cinzel", serif;
@@ -308,16 +445,34 @@ body{
   padding: 10px 8px;
 }
 .timebox__num{
+  display: block;
   font-family:"Cinzel", serif;
   font-size: 20px;
-  letter-spacing:.08em;
+  letter-spacing: .08em;
+  line-height: 1.2em;
+  min-height: 1.2em;
 }
 .timebox__lab{
   font-size: 11px;
   opacity:.9;
   margin-top: 4px;
 }
+.music-countdown{
+  display:flex;
+  flex-direction:column;
+  gap: 26px;
+}
 
+.music-countdown__music,
+.music-countdown__countdown{
+  width:100%;
+}
+
+.music-countdown__divider{
+  height: 1px;
+  background: rgba(255,255,255,.16);
+  width: 100%;
+}
 /* Reception info */
 .center{text-align:center}
 .info-time{
@@ -559,3 +714,14 @@ body{
 .reveal:nth-child(2) { transition-delay: 0.05s; }
 .reveal:nth-child(3) { transition-delay: 0.1s; }
 .reveal:nth-child(4) { transition-delay: 0.15s; }
+
+html, body{
+  overflow-x: hidden;
+  touch-action: manipulation;
+}
+
+img{
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
