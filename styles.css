@@ -278,7 +278,7 @@ body{
 .save-date-band__ornament img{
   height: 80px;
   width: auto;
-  transform: scaleX(1.6);
+  transform: scaleX(1.25);
 }
 
 .save-date-band__time{
