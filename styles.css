@@ -74,12 +74,14 @@ body{
 
 .hero-collage{
   padding: 10px 10px 0;
+  height: 900px;
+  overflow: hidden;
 }
 
-.hero-collage{
-  padding: 10px 10px 0;
-  display: flex;
-  justify-content: center;
+.hero-collage__scale{
+  width: 440px;
+  margin: 0 auto;
+  transform-origin: top center;
 }
 
 .hero-collage__stage{
@@ -710,13 +712,12 @@ body{
 
 /* Small phones */
 @media (max-width: 440px){
-  .hero-collage__stage{
-    transform: scale(calc((100vw - 20px) / 440));
-    transform-origin: top center;
+  .hero-collage{
+    height: calc(900px * ((100vw - 20px) / 440));
   }
 
-  .hero{
-    min-height: calc(900px * ((100vw - 20px) / 440));
+  .hero-collage__scale{
+    transform: scale(calc((100vw - 20px) / 440));
   }
 }
 @media (max-width: 360px){
