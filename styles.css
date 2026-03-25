@@ -716,8 +716,9 @@ body{
     height: calc(900px * ((100vw - 20px) / 440));
   }
 
-  .hero-collage__scale{
+  .hero-collage__stage{
     transform: scale(calc((100vw - 20px) / 440));
+    transform-origin: top center;
   }
 }
 @media (max-width: 360px){
