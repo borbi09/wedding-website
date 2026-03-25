@@ -73,9 +73,9 @@ body{
 }
 
 .hero-collage{
-  padding: 10px 10px 0;
+  padding: 10px 0 0;
   height: 900px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-collage__scale{
@@ -88,7 +88,6 @@ body{
   position: relative;
   width: 440px;
   height: 900px;
-  margin: 0 auto;
 }
 /* Base item */
 .hero-item{
@@ -715,13 +714,7 @@ body{
   .hero-collage{
     padding: 10px 0 0;
     height: calc(900px * (100vw / 440));
-    overflow: hidden;
-  }
-
-  .hero-collage__scale{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    overflow: visible;
   }
 
   .hero-collage__stage{
