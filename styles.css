@@ -722,6 +722,18 @@ body{
     transform-origin: top center;
   }
 }
+@media (min-width: 380px) and (max-width: 395px){
+  .hero-collage{
+    padding: 10px 0 0;
+    height: 800px;
+    overflow: hidden;
+  }
+
+  .hero-collage__stage{
+    transform: scale(0.885);
+    transform-origin: top center;
+  }
+}
 @media (max-width: 360px){
   .countdown__grid{gap: 8px}
   .names__script{font-size: 48px}
