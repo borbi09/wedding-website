@@ -73,7 +73,7 @@ body{
 }
 
 .hero-collage{
-  padding: 10px 6px 0;
+  padding: 10px 10px 0;
   height: 900px;
   overflow: hidden;
 }
@@ -713,11 +713,19 @@ body{
 /* Small phones */
 @media (max-width: 440px){
   .hero-collage{
-    height: calc(900px * ((100vw - 20px) / 440));
+    padding: 10px 0 0;
+    height: calc(900px * (100vw / 440));
+    overflow: hidden;
+  }
+
+  .hero-collage__scale{
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .hero-collage__stage{
-    transform: scale(calc((100vw - 20px) / 440));
+    transform: scale(calc(100vw / 440));
     transform-origin: top center;
   }
 }
