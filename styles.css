@@ -722,7 +722,7 @@ body{
     transform-origin: top center;
   }
 }
-@media (min-width: 380px) and (max-width: 395px){
+@media (min-width: 390px) and (max-width: 395px){
   .hero-collage{
     padding: 10px 0 0;
     height: 800px;
