@@ -40,6 +40,7 @@ body{
   min-height:100vh;
   box-shadow: var(--shadow);
   position:relative;
+  overflow: hidden;
 }
 
 /* Sections */
@@ -78,12 +79,11 @@ body{
 
 .hero-collage__stage{
   position: relative;
-  width: 440px;
-  min-width: 440px;
+  width: 100%;
   max-width: 440px;
   margin: 0 auto;
   height: 900px;
-  left: -13px;
+  left: -12px;
 }
 /* Base item */
 .hero-item{
