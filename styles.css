@@ -76,12 +76,17 @@ body{
   padding: 10px 10px 0;
 }
 
+.hero-collage{
+  padding: 10px 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
 .hero-collage__stage{
   position: relative;
-  width: 100%;
-  max-width: 440px;
-  margin: 0 auto;
+  width: 440px;
   height: 900px;
+  margin: 0 auto;
 }
 /* Base item */
 .hero-item{
@@ -704,6 +709,16 @@ body{
 }
 
 /* Small phones */
+@media (max-width: 440px){
+  .hero-collage__stage{
+    transform: scale(calc((100vw - 20px) / 440));
+    transform-origin: top center;
+  }
+
+  .hero{
+    min-height: calc(900px * ((100vw - 20px) / 440));
+  }
+}
 @media (max-width: 360px){
   .countdown__grid{gap: 8px}
   .names__script{font-size: 48px}
