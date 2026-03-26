@@ -507,16 +507,18 @@ body{
 .palette{
   display:flex;
   justify-content:center;
-  gap:10px;
-  margin: 10px 0 14px;
+  align-items:center;
+  gap:12px;
+  margin: 12px 0 16px;
 }
 
 .palette__dot{
-  width: 14px;
-  height: 14px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
-  border: 1px solid rgba(0,0,0,.15);
-  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+  border: 2px solid rgba(0,0,0,.18);
+  box-shadow: 0 2px 6px rgba(0,0,0,.10);
 }
 
 /* Sub badge */
