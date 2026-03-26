@@ -39,7 +39,8 @@ body{
   min-height: 100vh;
   box-shadow: var(--shadow);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 /* Sections */
