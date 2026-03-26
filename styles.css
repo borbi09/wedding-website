@@ -74,7 +74,7 @@ body{
 }
 
 .hero-collage{
-  --artboard-w: 440;
+  --artboard-w: 430;
   --artboard-h: 900;
   --side-gap: 20px;
   --scale: min(1, calc((100vw - var(--side-gap)) / (var(--artboard-w) * 1px)));
@@ -94,7 +94,7 @@ body{
 
 .hero-collage__stage{
   position: relative;
-  width: 440px;
+  width: 430px;
   height: 900px;
 
 }
