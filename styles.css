@@ -97,9 +97,6 @@ body{
   height: 900px;
 
 }
-.hero-collage__stage{
-  outline: 2px solid red;
-}
 /* Base item */
 .hero-item{
   position: absolute;
@@ -720,7 +717,12 @@ body{
   }
 }
 
-
+@media (max-width: 400px){
+  .hero-collage__scale{
+    transform: translateX(-10px) scale(var(--scale));
+    transform-origin: top center;
+  }
+}
 @media (max-width: 360px){
   .countdown__grid{gap: 8px}
   .names__script{font-size: 48px}
