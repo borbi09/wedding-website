@@ -68,8 +68,7 @@ body{
   overflow: hidden;
 }
 .hero{
-  margin-top: calc(env(safe-area-inset-top) * -1);
-  padding-top: env(safe-area-inset-top);
+  margin-top: -20px;
 }
 .hero > *{
   position: relative;
