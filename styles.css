@@ -719,7 +719,7 @@ body{
 
 @media (max-width: 400px){
   .hero-collage__scale{
-    transform: translateX(-10px) scale(var(--scale));
+    transform: translateX(-15px) scale(var(--scale));
     transform-origin: top center;
   }
 }
