@@ -73,17 +73,24 @@ body{
 }
 
 .hero-collage{
+  --artboard-w: 440;
+  --artboard-h: 900;
+  --side-gap: 20px;
+  --scale: min(1, calc((100vw - var(--side-gap)) / (var(--artboard-w) * 1px)));
+
   padding: 10px 0 0;
-  height: 900px;
+  height: calc(var(--artboard-h) * var(--scale) * 1px);
   overflow: visible;
 }
 
 .hero-collage__scale{
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  width: calc(var(--artboard-w) * 1px);
+  margin: 0 auto;
+  display: block;
+  transform: scale(var(--scale));
   transform-origin: top center;
 }
+
 .hero-collage__stage{
   position: relative;
   width: 440px;
@@ -709,44 +716,7 @@ body{
   }
 }
 
-/* Small phones */
-/*@media (max-width: 440px){
-  .hero-collage{
-    padding: 10px 0 0;
-    height: calc(900px * (100vw / 440));
-    overflow: visible;
-  }
 
-  .hero-collage__stage{
-    transform: scale(calc(100vw / 440));
-    transform-origin: top center;
-  }
-}
-*/
-@media (max-width: 430px){
-  .hero-collage{
-    height: 720px !important;
-  }
-
-  .hero-collage__scale{
-    transform: scale(0.80) !important;
-    transform-origin: top center !important;
-  }
-}
-/*
-@media (min-width: 390px) and (max-width: 395px){
-  .hero-collage{
-    padding: 10px 0 0;
-    height: 800px;
-    overflow: hidden;
-  }
-
-  .hero-collage__stage{
-    transform: scale(0.80);
-    transform-origin: top center;
-  }
-}
-*/
 @media (max-width: 360px){
   .countdown__grid{gap: 8px}
   .names__script{font-size: 48px}
