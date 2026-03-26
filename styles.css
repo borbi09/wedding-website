@@ -68,10 +68,6 @@ body{
   background: url("assets/images/background-burgundy.jpg") center center / cover no-repeat;
   overflow: hidden;
 }
-.hero{
-  margin-top: calc(env(safe-area-inset-top) * -1);
-  padding-top: env(safe-area-inset-top);
-}
 .hero > *{
   position: relative;
   z-index: 1;
@@ -83,7 +79,7 @@ body{
   --side-gap: 20px;
   --scale: min(1, calc((100vw - var(--side-gap)) / (var(--artboard-w) * 1px)));
 
-  padding: 10px 0 0;
+  padding: 0;
   height: calc(var(--artboard-h) * var(--scale) * 1px);
   overflow: visible;
 }
@@ -724,7 +720,7 @@ body{
 
 @media (max-width: 393px){
   .hero-collage__scale{
-    transform: translateX(-15px) scale(var(--scale));
+    transform: translateX(-10px) scale(var(--scale));
     transform-origin: top center;
   }
 }
