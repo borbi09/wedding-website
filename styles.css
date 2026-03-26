@@ -67,6 +67,10 @@ body{
   background: url("assets/images/background-burgundy.jpg") center center / cover no-repeat;
   overflow: hidden;
 }
+.hero{
+  margin-top: calc(env(safe-area-inset-top) * -1);
+  padding-top: env(safe-area-inset-top);
+}
 .hero > *{
   position: relative;
   z-index: 1;
