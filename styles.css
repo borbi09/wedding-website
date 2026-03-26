@@ -95,6 +95,10 @@ body{
   position: relative;
   width: 440px;
   height: 900px;
+
+}
+.hero-collage__stage{
+  outline: 2px solid red;
 }
 /* Base item */
 .hero-item{
