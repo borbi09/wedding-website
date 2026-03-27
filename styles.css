@@ -508,14 +508,14 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:12px;
+  gap:15px;
   margin: 12px 0 16px;
 }
 
 .palette__dot{
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   border: 2px solid rgba(0,0,0,.18);
   box-shadow: 0 2px 6px rgba(0,0,0,.10);
