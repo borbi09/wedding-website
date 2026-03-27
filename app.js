@@ -18,17 +18,16 @@ document.addEventListener("click", (e) => {
 const revealElements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
-  (entries) => {
+  (entries, obs) => {
     entries.forEach((entry) => {
-      if (entry.intersectionRatio > 0.25) {
+      if (entry.isIntersecting) {
         entry.target.classList.add("is-visible");
-      } else {
-        entry.target.classList.remove("is-visible");
+        obs.unobserve(entry.target); // 👈 reveal once only
       }
     });
   },
   {
-    threshold: [0, 0.25, 0.6, 1],
+    threshold: 0.18,
     rootMargin: "0px 0px -8% 0px",
   }
 );
