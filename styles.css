@@ -668,6 +668,17 @@ body{
   bottom: -18px;
   height: calc(100% + 38px);
 }
+.framed-card--reception .info-title{
+  margin-top: 4px;
+}
+
+.framed-card--reception .info-sub{
+  margin-top: 4px;
+}
+
+.framed-card--reception .btn{
+  margin-top: 10px;
+}
 
 .framed-card--dresscode .framed-card__frame{
   top: -6px;
