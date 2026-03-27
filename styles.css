@@ -639,17 +639,19 @@ body{
 }
 .framed-card{
   position: relative;
-  padding: 12px; /* space between frame and content */
 }
 
 .framed-card__frame{
   position: absolute;
-  inset: 0;
+  left: 0;
+  right: 0;
+  top: -8px;
+  bottom: -8px;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: calc(100% + 16px);
+  object-fit: fill;
   pointer-events: none;
-  z-index: 3;
+  z-index: 2;
 }
 
 .framed-card .card{
@@ -660,6 +662,17 @@ body{
   border-radius: 0;
   background: transparent;
   padding: 40px 20px 38px;
+}
+.framed-card--reception .framed-card__frame{
+  top: -10px;
+  bottom: -14px;
+  height: calc(100% + 24px);
+}
+
+.framed-card--dresscode .framed-card__frame{
+  top: -6px;
+  bottom: -10px;
+  height: calc(100% + 16px);
 }
 /* RSVP */
 .rsvp-form{
