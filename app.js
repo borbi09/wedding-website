@@ -17,8 +17,8 @@ document.addEventListener("click", (e) => {
 
 const revealElements = document.querySelectorAll(".reveal");
 
-const ENTER_THRESHOLD = 0.23;
-const EXIT_THRESHOLD = 0.15;
+const ENTER_THRESHOLD = 0.15;
+const EXIT_THRESHOLD = 0.08;
 
 const observer = new IntersectionObserver(
   (entries) => {
