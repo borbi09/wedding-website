@@ -668,6 +668,9 @@ body{
   bottom: -18px;
   height: calc(100% + 38px);
 }
+.framed-card--reception .info-time{
+  margin-top: 10px;
+}
 .framed-card--reception .info-title{
   margin-top: 4px;
 }
