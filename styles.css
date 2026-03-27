@@ -664,9 +664,12 @@ body{
   padding: 40px 20px 38px;
 }
 .framed-card--reception .framed-card__frame{
-  top: -24px;
+  top: -14px;
   bottom: -18px;
-  height: calc(100% + 42px);
+  height: calc(100% + 32px);
+}
+.framed-card--reception .card{
+  padding-top: 10px;
 }
 
 .framed-card--dresscode .framed-card__frame{
