@@ -17,18 +17,26 @@ document.addEventListener("click", (e) => {
 
 const revealElements = document.querySelectorAll(".reveal");
 
+const VISIBILITY_ENTER = 0.32;
+const VISIBILITY_EXIT = 0.12;
+
 const observer = new IntersectionObserver(
-  (entries, obs) => {
+  (entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        obs.unobserve(entry.target); // 👈 reveal once only
+      const el = entry.target;
+      const ratio = entry.intersectionRatio;
+      const isVisible = el.classList.contains("is-visible");
+
+      if (!isVisible && ratio >= VISIBILITY_ENTER) {
+        el.classList.add("is-visible");
+      } else if (isVisible && ratio <= VISIBILITY_EXIT) {
+        el.classList.remove("is-visible");
       }
     });
   },
   {
-    threshold: 0.18,
-    rootMargin: "0px 0px -8% 0px",
+    threshold: [0, 0.12, 0.18, 0.24, 0.32, 0.45, 0.6, 1],
+    rootMargin: "0px 0px -6% 0px",
   }
 );
 
