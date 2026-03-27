@@ -17,26 +17,26 @@ document.addEventListener("click", (e) => {
 
 const revealElements = document.querySelectorAll(".reveal");
 
-const VISIBILITY_ENTER = 0.32;
-const VISIBILITY_EXIT = 0.12;
+const ENTER_THRESHOLD = 0.23;
+const EXIT_THRESHOLD = 0.15;
 
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       const el = entry.target;
-      const ratio = entry.intersectionRatio;
       const isVisible = el.classList.contains("is-visible");
+      const ratio = entry.intersectionRatio;
 
-      if (!isVisible && ratio >= VISIBILITY_ENTER) {
+      if (!isVisible && ratio >= ENTER_THRESHOLD) {
         el.classList.add("is-visible");
-      } else if (isVisible && ratio <= VISIBILITY_EXIT) {
+      } else if (isVisible && ratio <= EXIT_THRESHOLD) {
         el.classList.remove("is-visible");
       }
     });
   },
   {
-    threshold: [0, 0.12, 0.18, 0.24, 0.32, 0.45, 0.6, 1],
-    rootMargin: "0px 0px -6% 0px",
+    threshold: [0, 0.18, 0.28, 0.6, 1],
+    rootMargin: "0px 0px -8% 0px",
   }
 );
 
