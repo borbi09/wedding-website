@@ -637,7 +637,24 @@ body{
   letter-spacing:.12em;
   font-size: 12px;
 }
+.framed-card{
+  position: relative;
+}
 
+.framed-card__frame{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.framed-card .card{
+  position: relative;
+  z-index: 1;
+}
 /* RSVP */
 .rsvp-form{
   margin-top: 12px;
