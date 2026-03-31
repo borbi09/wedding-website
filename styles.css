@@ -697,11 +697,11 @@ body{
 
 .dresscode-card__type{
   margin-top: 14px;
-  font-family:"Great Vibes", cursive;
+  font-family: "Great Vibes", cursive !important; /* FORCE */
   font-size: 28px;
   letter-spacing: 0;
   text-transform: none;
-  color: var(--ink));
+  color: var(--ink);
 }
 
 .dresscode-card__label{
