@@ -670,7 +670,6 @@ body{
   bottom: -10px;
   height: calc(100% + 16px);
 }
-/* Dress code */
 
 /* Dress code */
 .framed-card--dresscode .framed-card__frame{
@@ -697,21 +696,22 @@ body{
 }
 
 .dresscode-card__type{
-  margin-top: 12px;
-  font-family:"Cinzel", serif;
-  font-size: 13px;
-  letter-spacing: .10em;
-  text-transform: uppercase;
-  color: var(--burgundy-2);
+  margin-top: 14px;
+  font-family:"Great Vibes", cursive;
+  font-size: 28px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink));
 }
 
 .dresscode-card__label{
-  margin-top: 18px;
+  margin-top: 14px;
   font-family:"Cinzel", serif;
   font-size: 11px;
   letter-spacing: .20em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--ink);
+  opacity: 0.7; /* по-елегантно вместо сиво */
 }
 
 .palette--dresscode{
