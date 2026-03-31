@@ -679,11 +679,15 @@ body{
 }
 
 .framed-card--dresscode .card{
-  padding: 26px 18px 24px;
+  padding: 24px 18px 22px;
 }
 
 .dresscode-card{
-  text-align:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
 }
 
 .dresscode-card__title{
@@ -696,7 +700,8 @@ body{
 }
 
 .dresscode-card__type{
-  font-family: "Great Vibes", cursive !important; /* FORCE */
+  margin: 0;
+  font-family: "Great Vibes", cursive;
   font-size: 28px;
   letter-spacing: 0;
   text-transform: none;
@@ -704,15 +709,17 @@ body{
 }
 
 .dresscode-card__label{
+  margin: 0;
   font-family:"Cinzel", serif;
   font-size: 11px;
   letter-spacing: .20em;
   text-transform: uppercase;
   color: var(--ink);
-  opacity: 0.7; /* по-елегантно вместо сиво */
+  opacity: .7;
 }
 
 .palette--dresscode{
+  margin: 4px 0 6px;
   gap: 14px;
 }
 
@@ -724,15 +731,11 @@ body{
 }
 
 .dresscode-card__note{
+  margin: 0;
   font-size: 13px;
-  line-height: 1.6;
-  color: var(--muted);
-}
-.dresscode-card{
-  display: flex;
-  flex-direction: column;
-  gap: 1px; /* контролира ВСИЧКО */
-  text-align: center;
+  line-height: 1.5;
+  color: var(--ink);
+  opacity: .75;
 }
 /* RSVP */
 .rsvp-form{
