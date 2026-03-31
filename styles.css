@@ -688,6 +688,29 @@ body{
   bottom: -10px;
   height: calc(100% + 16px);
 }
+
+/* Dress code*/
+.framed-card--dresscode .framed-card__frame{
+  top: -20px;
+  bottom: -18px;
+  height: calc(100% + 38px);
+}
+
+.framed-card--dresscode .card{
+  padding: 30px 20px 28px;
+}
+
+.framed-card--dresscode .badge{
+  margin-bottom: 6px;
+}
+
+.framed-card--dresscode .palette{
+  margin: 8px 0 10px;
+}
+
+.framed-card--dresscode .small{
+  margin-top: 6px;
+}
 /* RSVP */
 .rsvp-form{
   margin-top: 12px;
