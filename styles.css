@@ -666,16 +666,19 @@ body{
 }
 
 /* Dress code */
+/* Dress code */
 .framed-card--dresscode .framed-card__frame{
-  top: -36px;
-  bottom: -30px;
+  top: -10px;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  width: 100%;
   height: auto;
+  object-fit: fill;
 }
 
-
 .framed-card--dresscode .card{
-  padding: 20px 18px 18px;
-  min-height: 100%;
+  padding: 26px 22px 28px;
 }
 
 .dresscode-card{
@@ -736,12 +739,6 @@ body{
   font-size: 18px;
   color: var(--ink);
   opacity: .72;
-}
-
-.framed-card--dresscode{
-  display: block;
-  min-height: 240px;
-
 }
 /* RSVP */
 .rsvp-form{
