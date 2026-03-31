@@ -731,7 +731,7 @@ body{
 .dresscode-card{
   display: flex;
   flex-direction: column;
-  gap: 4px; /* контролира ВСИЧКО */
+  gap: 1px; /* контролира ВСИЧКО */
   text-align: center;
 }
 /* RSVP */
