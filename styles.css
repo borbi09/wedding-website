@@ -696,7 +696,7 @@ body{
 }
 
 .dresscode-card__type{
-  margin-top: 14px;
+  margin-top: 8px;
   font-family: "Great Vibes", cursive !important; /* FORCE */
   font-size: 28px;
   letter-spacing: 0;
@@ -705,7 +705,7 @@ body{
 }
 
 .dresscode-card__label{
-  margin-top: 14px;
+  margin-top: 10px;
   font-family:"Cinzel", serif;
   font-size: 11px;
   letter-spacing: .20em;
@@ -715,7 +715,7 @@ body{
 }
 
 .palette--dresscode{
-  margin: 14px 0 16px;
+  margin: 8px 0 10px;
   gap: 14px;
 }
 
