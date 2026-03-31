@@ -667,17 +667,19 @@ body{
 
 /* Dress code */
 .framed-card--dresscode .framed-card__frame{
-  top: -10px;
-  bottom: -10px;
-  left: 0;
-  right: 0;
+  position: absolute;
+  inset: -10px 0;
   width: 100%;
-  height: auto;
+  height: calc(100% + 20px);
   object-fit: fill;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .framed-card--dresscode .card{
-  padding: 32px 24px 34px;
+  padding: 30px 24px 34px;
+  position: relative;
+  z-index: 1;
 }
 
 .dresscode-card{
