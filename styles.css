@@ -667,7 +667,7 @@ body{
 
 /* Dress code */
 .framed-card--dresscode .framed-card__frame{
- top: -36px;
+  top: -36px;
   bottom: -30px;
   height: auto;
 }
@@ -675,7 +675,7 @@ body{
 
 .framed-card--dresscode .card{
   padding: 20px 18px 18px;
-  min-height: 220px;
+  min-height: 100%;
 }
 
 .dresscode-card{
