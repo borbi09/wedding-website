@@ -673,13 +673,13 @@ body{
 
 /* Dress code */
 .framed-card--dresscode .framed-card__frame{
-  top: -20px;
-  bottom: -18px;
-  height: calc(100% + 38px);
+  top: -24px;
+  bottom: -26px;
+  height: calc(100% + 50px);
 }
 
 .framed-card--dresscode .card{
-  padding: 24px 18px 22px;
+  padding: 20px 18px 18px;
 }
 
 .dresscode-card{
@@ -687,22 +687,24 @@ body{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 4px;
+  gap: 2px;
 }
 
 .dresscode-card__title{
   margin: 0;
+  line-height: 1;
   font-family:"Cinzel", serif;
-  font-size: 18px;
-  letter-spacing: .14em;
+  font-size: 17px;
+  letter-spacing: .12em;
   text-transform: uppercase;
   color: var(--ink);
 }
 
 .dresscode-card__type{
   margin: 0;
+  line-height: .95;
   font-family: "Great Vibes", cursive;
-  font-size: 28px;
+  font-size: 26px;
   letter-spacing: 0;
   text-transform: none;
   color: var(--ink);
@@ -710,32 +712,33 @@ body{
 
 .dresscode-card__label{
   margin: 0;
+  line-height: 1;
   font-family:"Cinzel", serif;
-  font-size: 11px;
-  letter-spacing: .20em;
+  font-size: 10px;
+  letter-spacing: .18em;
   text-transform: uppercase;
   color: var(--ink);
   opacity: .7;
 }
 
 .palette--dresscode{
-  margin: 4px 0 6px;
-  gap: 14px;
+  margin: 2px 0 4px;
+  gap: 12px;
 }
 
 .palette--dresscode .palette__dot{
   width: 24px;
   height: 24px;
-  border: 1.5px solid rgba(0,0,0,.14);
+  border: 1px solid rgba(0,0,0,.14);
   box-shadow: none;
 }
 
 .dresscode-card__note{
   margin: 0;
-  font-size: 13px;
-  line-height: 1.5;
+  line-height: 1.2;
+  font-size: 11px;
   color: var(--ink);
-  opacity: .75;
+  opacity: .72;
 }
 /* RSVP */
 .rsvp-form{
