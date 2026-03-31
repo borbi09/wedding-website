@@ -673,9 +673,9 @@ body{
 
 /* Dress code */
 .framed-card--dresscode .framed-card__frame{
-  top: -24px;
-  bottom: -26px;
-  height: calc(100% + 50px);
+  top: -30px;
+  bottom: -32px;
+  height: calc(100% + 62px);
 }
 
 .framed-card--dresscode .card{
@@ -687,7 +687,7 @@ body{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 6px;
+  gap: 10px;
 }
 
 .dresscode-card__title{
