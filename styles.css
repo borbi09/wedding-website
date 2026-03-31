@@ -672,7 +672,7 @@ body{
 
 /* Dress code */
 .framed-card--dresscode .framed-card__frame{
-  top: -2px;
+  top: -20px;
   height: calc(100% + 60px);
 }
 
