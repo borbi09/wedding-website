@@ -672,14 +672,14 @@ body{
 
 /* Dress code */
 .framed-card--dresscode .framed-card__frame{
-  top: -18px;
+  top: -10px;
   height: calc(100% + 60px);
 }
 }
 
 .framed-card--dresscode .card{
   padding: 20px 18px 18px;
-  min-height: 200px;
+  min-height: 220px;
 }
 
 .dresscode-card{
@@ -693,10 +693,10 @@ body{
 .dresscode-card__title{
   margin: 0;
   line-height: 1;
-  font-family:"Cinzel", serif;
-  font-size: 17px;
-  letter-spacing: .12em;
-  text-transform: uppercase;
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+  letter-spacing: 0;
+  text-transform: none;
   color: var(--ink);
 }
 
@@ -713,10 +713,10 @@ body{
 .dresscode-card__label{
   margin: 0;
   line-height: 1;
-  font-family:"Cinzel", serif;
-  font-size: 10px;
-  letter-spacing: .18em;
-  text-transform: uppercase;
+  font-family: "Great Vibes", cursive;
+  font-size: 18px;
+  letter-spacing: 0;
+  text-transform: none;
   color: var(--ink);
   opacity: .7;
 }
@@ -735,8 +735,9 @@ body{
 
 .dresscode-card__note{
   margin: 0;
-  line-height: 1.2;
-  font-size: 11px;
+  line-height: 1.4;
+  font-family: "Great Vibes", cursive;
+  font-size: 18px;
   color: var(--ink);
   opacity: .72;
 }
