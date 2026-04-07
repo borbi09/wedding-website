@@ -812,7 +812,9 @@ body{
   text-align:center;
   margin-top: 6px;
 }
-
+.section--burgundy .muted {
+  text-align: center;
+}
 /* Footer */
 .footer{
   padding: 18px;
