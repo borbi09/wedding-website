@@ -701,7 +701,7 @@ body{
 
 .dresscode-card__title{
   font-family:"Cinzel", serif;
-  font-size: 12px;
+  font-size: 20px;
   letter-spacing:.14em;
   text-transform: uppercase;
 }
@@ -731,7 +731,7 @@ body{
 }
 
 .dresscode-card__note{
-  font-size: 13px;
+  font-size: 10px;
   color: var(--muted);
 }
 
