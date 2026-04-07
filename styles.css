@@ -581,41 +581,70 @@ body{
 }
 
 /* Timeline */
-.timeline{
-  position:relative;
-  padding: 8px 10px 6px 24px;
+.timeline {
+  position: relative;
+  padding: 8px 0;
   margin-top: 6px;
 }
-.timeline__line{
-  position:absolute;
-  left: 14px;
-  top: 6px;
-  bottom: 6px;
+
+.timeline__line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
   width: 2px;
+  transform: translateX(-50%);
   background: rgba(0,0,0,.10);
 }
-.timeline__item{
-  display:grid;
-  grid-template-columns: 20px 90px 1fr;
-  align-items:center;
-  gap: 10px;
+
+.timeline__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   padding: 10px 0;
-  border-bottom: 1px dashed rgba(0,0,0,.08);
+  position: relative;
+  width: 50%;
+  left: 0;
+  text-align: right;
+  padding-right: 20px;
 }
-.timeline__item:last-child{border-bottom:none}
-.timeline__dot{
-  width: 10px; height: 10px;
+
+.timeline__item:nth-child(even) {
+  justify-content: flex-start;
+  left: 50%;
+  text-align: left;
+  padding-right: 0;
+  padding-left: 20px;
+}
+
+.timeline__dot {
+  position: absolute;
+  right: -5px;
+  width: 10px;
+  height: 10px;
   border-radius: 999px;
   background: var(--burgundy);
   box-shadow: 0 0 0 4px rgba(91,31,44,.12);
-  justify-self:center;
 }
-.timeline__time{
-  font-family:"Cinzel", serif;
+
+.timeline__item:nth-child(even) .timeline__dot {
+  right: unset;
+  left: -5px;
+}
+
+.timeline__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.timeline__time {
+  font-family: "Cinzel", serif;
   font-size: 12px;
-  letter-spacing:.08em;
+  letter-spacing: .08em;
 }
-.timeline__text{
+
+.timeline__text {
   font-size: 13px;
   color: var(--muted);
 }
