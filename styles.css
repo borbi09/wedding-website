@@ -668,7 +668,7 @@ body{
 /* Dress code */
 .framed-card--dresscode {
   position: relative;
-  padding: 14px 0;
+  padding: 24px 0;
 }
 
 .framed-card--dresscode .framed-card__frame {
