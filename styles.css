@@ -338,13 +338,17 @@ body{
   transform: scale(1.01);
 }
 
+h3{
+  font-family: "Great Vibes", cursive;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-transform: none;
+}
 /* Titles */
 .section-title{
   margin: 0 0 14px;
-  font-family:"Cinzel", serif;
   font-size: 12px;
-  letter-spacing:.14em;
-  text-transform: uppercase;
   text-align:center;
 }
 .section-title--dark{color: var(--ink);}
