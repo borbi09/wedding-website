@@ -338,18 +338,13 @@ body{
   transform: scale(1.01);
 }
 
-h3{
-  font-family: "Great Vibes", cursive;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 0;
-  text-transform: none;
-  line-height: 1.2;
-}
 /* Titles */
 .section-title{
   margin: 0 0 14px;
-  font-size: 30px;
+  font-family:"Cinzel", serif;
+  font-size: 12px;
+  letter-spacing:.14em;
+  text-transform: uppercase;
   text-align:center;
 }
 .section-title--dark{color: var(--ink);}
@@ -704,31 +699,23 @@ h3{
   gap: 4px;
 }
 
-/*.dresscode-card__title{
-  margin: 0;
-  line-height: 1;
-  font-family: "Great Vibes", cursive;
-  font-size: 30px;
-  letter-spacing: 0;
-  text-transform: none;
-  color: var(--ink);
+.dresscode-card__title{
+  font-family:"Cinzel", serif;
+  font-size: 12px;
+  letter-spacing:.14em;
+  text-transform: uppercase;
 }
-*/
+
 .dresscode-card__type{
-  margin: 0;
-  line-height: .95;
-  font-family: "Great Vibes", cursive;
-  font-size: 26px;
-  letter-spacing: 0;
-  text-transform: none;
-  color: var(--ink);
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .dresscode-card__label{
-  font-family: "Cinzel", serif;
   font-size: 11px;
-  letter-spacing: .18em;
+  letter-spacing:.12em;
   text-transform: uppercase;
+  opacity:.7;
 }
 
 .palette--dresscode{
@@ -744,8 +731,10 @@ h3{
 }
 
 .dresscode-card__note{
-  font-family: Inter, sans-serif;
   font-size: 13px;
+  color: var(--muted);
+}
+
 }
 /* RSVP */
 .rsvp-form{
