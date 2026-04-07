@@ -340,15 +340,16 @@ body{
 
 h3{
   font-family: "Great Vibes", cursive;
-  font-size: 28px;
-  font-weight: normal;
+  font-size: 30px;
+  font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
+  line-height: 1.2;
 }
 /* Titles */
 .section-title{
   margin: 0 0 14px;
-  font-size: 12px;
+  font-size: 30px;
   text-align:center;
 }
 .section-title--dark{color: var(--ink);}
@@ -703,7 +704,7 @@ h3{
   gap: 4px;
 }
 
-.dresscode-card__title{
+/*.dresscode-card__title{
   margin: 0;
   line-height: 1;
   font-family: "Great Vibes", cursive;
@@ -712,7 +713,7 @@ h3{
   text-transform: none;
   color: var(--ink);
 }
-
+*/
 .dresscode-card__type{
   margin: 0;
   line-height: .95;
@@ -724,14 +725,10 @@ h3{
 }
 
 .dresscode-card__label{
-  margin: 0;
-  line-height: 1;
-  font-family: "Great Vibes", cursive;
-  font-size: 18px;
-  letter-spacing: 0;
-  text-transform: none;
-  color: var(--ink);
-  opacity: .7;
+  font-family: "Cinzel", serif;
+  font-size: 11px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
 }
 
 .palette--dresscode{
@@ -747,12 +744,8 @@ h3{
 }
 
 .dresscode-card__note{
-  margin: 0;
-  line-height: 1.4;
-  font-family: "Great Vibes", cursive;
-  font-size: 18px;
-  color: var(--ink);
-  opacity: .72;
+  font-family: Inter, sans-serif;
+  font-size: 13px;
 }
 /* RSVP */
 .rsvp-form{
