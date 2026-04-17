@@ -88,7 +88,7 @@ body{
   width: calc(var(--artboard-w) * 1px);
   margin: 0 auto;
   display: block;
-  transform: translateX(-11px) scale(var(--scale));
+  transform: translateX(-14px) scale(var(--scale));
   transform-origin: top center;
 }
 .hero-collage__stage{
