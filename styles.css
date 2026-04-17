@@ -801,6 +801,13 @@ body{
   text-align:center;
   min-height: 18px;
 }
+.section--burgundy .section-title {
+  font-size: 15px;
+}
+
+.section--burgundy .muted {
+  font-size: 12px;
+}
 .thanks{
   margin-top: 16px;
   padding-top: 12px;
