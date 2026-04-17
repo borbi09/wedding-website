@@ -127,7 +127,7 @@ body{
 
 .hero-item--envelope-bottom{
   top: 410px;
-  right: 32px;
+  right: 30px;
   width: 180px;
   transform: rotate(0deg);
   z-index: 1;
@@ -227,7 +227,7 @@ body{
 
 .hero-item--flower-b{
   top: 345px;
-  right: 8px;
+  right: 7px;
   width: 104px;
   transform: rotate(6deg);
   z-index: 6;
