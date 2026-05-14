@@ -1276,6 +1276,11 @@ body{
 
 /* Scroll reveal */
 .reveal {
+  opacity: 1;
+  transform: none;
+}
+
+.js .reveal {
   opacity: 0;
   transform: translateY(30px) scale(0.98);
   transition:
@@ -1284,7 +1289,7 @@ body{
   will-change: opacity, transform;
 }
 
-.reveal.is-visible {
+.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
