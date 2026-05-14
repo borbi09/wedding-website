@@ -880,6 +880,12 @@ body{
 }
 
 .timeline-reveal{
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+.js .timeline-reveal{
   opacity: 0;
   transform: translateY(16px) scale(.985);
   filter: blur(2px);
@@ -889,7 +895,7 @@ body{
     filter 560ms var(--ease-out);
 }
 
-.timeline-reveal.is-visible{
+.js .timeline-reveal.is-visible{
   opacity: 1;
   transform: translateY(0) scale(1);
   filter: blur(0);
