@@ -152,6 +152,7 @@ const tCur = document.getElementById("tCur");
 const tDur = document.getElementById("tDur");
 const btnPrev = document.getElementById("btnPrev");
 const btnNext = document.getElementById("btnNext");
+const trackTitle = document.getElementById("trackTitle");
 
 const playlist = [
   {
@@ -314,3 +315,4 @@ if (form && msg && btn) {
     btn.style.opacity = "1";
   }
 });
+}
