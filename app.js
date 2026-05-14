@@ -1,5 +1,5 @@
-//import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
-//import { getFirestore, addDoc, collection, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+import { getFirestore, addDoc, collection, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 
 document.documentElement.classList.add("js");
 window.addEventListener("load", () => {
@@ -256,9 +256,9 @@ if (audio && btnPlay && playIcon && seek && tCur && tDur) {
 // ===========================
 // RSVP submit (Firebase-ready)
 // ===========================
-/*const USE_FIREBASE = false;
 
- const firebaseConfig = {
+
+const firebaseConfig = {
     apiKey: "AIzaSyDAktKDiz9imJHsIJu6F3gd-evYZRgACSw",
     authDomain: "weddingrsvp-4417b.firebaseapp.com",
     projectId: "weddingrsvp-4417b",
@@ -314,5 +314,3 @@ if (form && msg && btn) {
     btn.style.opacity = "1";
   }
 });
-
-*/
