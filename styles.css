@@ -504,20 +504,56 @@ body{
 }
 .music-countdown__spacer{height:30px;}
 
-.blessing{
-  margin-top: 16px;
-  text-align:center;
-  color: rgba(255,255,255,.92);
-  font-size: 13px;
-  line-height: 1.55;
-}
-.names-list{
-  margin: 10px 0 0;
-  font-weight: 500;
-}
 .small{font-size: 12px;}
 .muted{opacity:.88}
 
+/* Our story */
+.our-story{
+  max-width: 360px;
+  margin: 22px auto 4px;
+  text-align: center;
+  color: rgba(255,255,255,.92);
+}
+
+.our-story__title{
+  margin: 0 0 10px;
+  font-family: "Great Vibes", cursive;
+  font-size: 38px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--ivory);
+}
+
+.our-story__text{
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.65;
+  font-weight: 300;
+  color: rgba(255,255,255,.82);
+}
+
+.our-story::before,
+.our-story::after{
+  content:"";
+  display:block;
+  width: 78px;
+  height: 1px;
+  margin: 0 auto;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.28),
+    transparent
+  );
+}
+
+.our-story::before{
+  margin-bottom: 16px;
+}
+
+.our-story::after{
+  margin-top: 16px;
+}
 /* Countdown */
 .date-strip{
   text-align:center;
