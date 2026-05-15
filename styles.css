@@ -318,26 +318,35 @@ body{
 
 .save-date-band__eyebrow{
   font-family:"Cinzel", serif;
-  font-size: 17px;
-  letter-spacing: .28em;
-  opacity: .98;
+  font-size: 16px;
+  letter-spacing: .30em;
+  opacity: .95;
+  margin-bottom: 12px;
+}
+
+.save-date-band__date{
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  text-align: center;
 }
 
 .save-date-band__day{
+  font-family:"Cinzel", serif;
   line-height: 1;
-  margin-bottom: -8px;
+  margin-bottom: -4px;
 }
 
 .save-date-band__day-num{
-  font-family: "Cinzel", serif;
-  font-size: 44px;
+  font-size: 42px;
   line-height: 1;
 }
 
 .save-date-band__day-suffix{
-  font-family: "Cinzel", serif;
-  font-size: 18px;
-  line-height: 1;
+  font-size: 16px;
   margin-left: 3px;
   vertical-align: super;
   letter-spacing: .04em;
@@ -345,8 +354,16 @@ body{
 
 .save-date-band__month{
   font-family: "Great Vibes", cursive;
-  font-size: 88px;
-  line-height: .86;
+  font-size: 82px;
+  line-height: .88;
+}
+
+.save-date-band__year{
+  font-family:"Cinzel", serif;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: .10em;
+  margin-top: 6px;
 }
 .save-date-band__ornament{
   margin: 22px auto 0;
