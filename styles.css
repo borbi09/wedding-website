@@ -318,33 +318,45 @@ body{
 
 .save-date-band__eyebrow{
   font-family:"Cinzel", serif;
-  font-size:13px;
-  letter-spacing:.25em;
-  opacity:.9;
+  font-size: 15px;
+  letter-spacing: .28em;
+  opacity: .95;
 }
 
 .save-date-band__date{
-  margin-top: 18px;
+  margin-top: 14px;
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 22px;
-  flex-wrap: wrap;
+  gap: 0;
+  text-align: center;
 }
 
 .save-date-band__day,
 .save-date-band__year{
   font-family:"Cinzel", serif;
-  font-size:34px;
   font-weight:400;
-  letter-spacing:.06em;
-}
-.save-date-band__month{
-  font-family: "Great Vibes", cursive;
-  font-size: 84px;
-  line-height: .9;
+  letter-spacing:.10em;
 }
 
+.save-date-band__day{
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: -2px;
+}
+
+.save-date-band__month{
+  font-family: "Great Vibes", cursive;
+  font-size: 86px;
+  line-height: .86;
+}
+
+.save-date-band__year{
+  font-size: 24px;
+  line-height: 1;
+  margin-top: 2px;
+}
 .save-date-band__ornament{
   margin: 22px auto 0;
   display: flex;
