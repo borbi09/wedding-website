@@ -500,6 +500,26 @@ body{
   opacity:.9;
   margin-bottom: 6px;
 }
+.player-icon,
+.player-icon-wrap{
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.play-btn .player-icon,
+.play-btn .player-icon-wrap{
+  width: 22px;
+  height: 22px;
+}
+
+.player-icon{
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 #seek{
   width: 100%;
   accent-color: var(--ivory);
