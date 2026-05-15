@@ -217,17 +217,34 @@ if (audio && btnPlay && playIcon && seek && tCur && tDur) {
     }
   });
 
-  audio.addEventListener("play", () => {
-    playIcon.textContent = "⏸";
-    btnPlay.setAttribute("aria-label", "Pause song");
-    player?.classList.add("is-playing");
-  });
+  function setPlayIcon(isPlaying) {
+  if (!playIcon) return;
 
-  audio.addEventListener("pause", () => {
-    playIcon.textContent = "▶";
-    btnPlay.setAttribute("aria-label", "Play song");
-    player?.classList.remove("is-playing");
-  });
+  playIcon.innerHTML = isPlaying
+    ? `
+      <svg class="player-icon player-icon--pause" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8 5v14"></path>
+        <path d="M16 5v14"></path>
+      </svg>
+    `
+    : `
+      <svg class="player-icon player-icon--play" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8 5v14l11-7-11-7z"></path>
+      </svg>
+    `;
+}
+
+audio.addEventListener("play", () => {
+  setPlayIcon(true);
+  btnPlay.setAttribute("aria-label", "Pause song");
+  player?.classList.add("is-playing");
+});
+
+audio.addEventListener("pause", () => {
+  setPlayIcon(false);
+  btnPlay.setAttribute("aria-label", "Play song");
+  player?.classList.remove("is-playing");
+});
 
   audio.addEventListener("loadedmetadata", () => {
     tDur.textContent = fmtTime(audio.duration);
@@ -252,7 +269,7 @@ if (audio && btnPlay && playIcon && seek && tCur && tDur) {
       loadTrack(trackIndex + 1);
       audio.play().catch(() => {});
     } else {
-      playIcon.textContent = "▶";
+      setPlayIcon(false);
       player?.classList.remove("is-playing");
       seek.value = "0";
       tCur.textContent = "0:00";
