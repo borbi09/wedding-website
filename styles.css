@@ -1170,6 +1170,7 @@ body{
   height: 24px;
   border: 1px solid rgba(0,0,0,.14);
   box-shadow: none;
+  opacity: .72;
   transform: scale(.92);
 }
 .reveal.is-visible .palette--dresscode .palette__dot{
@@ -1248,6 +1249,13 @@ body{
   display:block;
   font-size: 12px;
   opacity:.95;
+  margin-bottom: 6px;
+}
+.field__hint{
+  font-size: 10px;
+  opacity: .78;
+  line-height: 1.35;
+  margin-top: -2px;
   margin-bottom: 6px;
 }
 .field input, .field select, .field textarea{
