@@ -429,12 +429,14 @@ body{
 /* Titles */
 .section-title{
   margin: 0 0 14px;
-  font-family:"Cinzel", serif;
-  font-size: 12px;
-  letter-spacing:.14em;
-  text-transform: uppercase;
-  text-align:center;
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(28px, 8vw, 34px);
+  letter-spacing: .02em;
+  text-transform: none;
+  font-weight: 400;
+  text-align: center;
 }
+
 .section-title--dark{color: var(--ink);}
 
 /* Player */
@@ -606,9 +608,10 @@ body{
   padding: 6px 0 4px;
 }
 .countdown__label{
-  font-family:"Cinzel", serif;
-  letter-spacing:.2em;
-  font-size: 14px;
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(28px, 8vw, 34px);
+  letter-spacing: .02em;
+  font-weight: 400;
   opacity: .95;
   margin-bottom: 10px;
 }
@@ -1142,10 +1145,11 @@ body{
 }
 
 .dresscode-card__title{
-  font-family:"Cinzel", serif;
-  font-size: 20px;
-  letter-spacing:.14em;
-  text-transform: uppercase;
+  font-family: "Great Vibes", cursive;
+  font-size: clamp(30px, 8vw, 34px);
+  letter-spacing: .02em;
+  text-transform: none;
+  font-weight: 400;
 }
 
 .dresscode-card__type{
@@ -1309,7 +1313,7 @@ body{
   color: rgba(255,255,255,.92);
 }
 .section--burgundy .section-title {
-  font-size: 15px;
+  font-size: clamp(28px, 8vw, 34px);
 }
 
 .section--burgundy .muted {
