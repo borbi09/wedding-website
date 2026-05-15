@@ -294,6 +294,15 @@ body{
   display: block;
   pointer-events: none;
 }
+.hero-story-link{
+  pointer-events: auto;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-story-link img{
+  pointer-events: none;
+}
 
 /* Save-the-date band */
 .save-date-band{
