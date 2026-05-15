@@ -16,7 +16,13 @@ document.addEventListener("click", (e) => {
   const el = document.querySelector(id);
   if (!el) return;
   e.preventDefault();
-  el.scrollIntoView({ behavior: "smooth", block: "start" });
+  
+  const blockPosition = id === "#our-story" ? "center" : "start";
+
+  el.scrollIntoView({
+  behavior: "smooth",
+  block: blockPosition,
+ });
 });
 
 // ===========================
