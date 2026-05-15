@@ -1145,14 +1145,17 @@ body{
 }
 
 .dresscode-card__title{
-  font-family: "Great Vibes", cursive;
+  margin: 0;
+  font-family:"Great Vibes", cursive;
   font-size: clamp(30px, 8vw, 34px);
+  line-height: .9;
   letter-spacing: .02em;
   text-transform: none;
   font-weight: 400;
 }
 
 .dresscode-card__type{
+  margin-top: -2px;
   font-size: 13px;
   font-weight: 500;
 }
