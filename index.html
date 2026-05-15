@@ -86,17 +86,27 @@
       </audio>
 
 
-      <button class="icon-btn" id="btnPrev" type="button" aria-label="Previous song">
-        ⏮
-      </button>
+     <button class="icon-btn" id="btnPrev" type="button" aria-label="Previous song">
+       <svg class="player-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7 5v14"></path>
+        <path d="M19 6l-9 6 9 6V6z"></path>
+       </svg>
+    </button>
 
-      <button class="play-btn" id="btnPlay" type="button" aria-label="Play song">
-        <span id="playIcon">▶</span>
-      </button>
+    <button class="play-btn" id="btnPlay" type="button" aria-label="Play song">
+      <span id="playIcon" class="player-icon-wrap" aria-hidden="true">
+        <svg class="player-icon player-icon--play" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7-11-7z"></path>
+        </svg>
+      </span>
+    </button>
 
-      <button class="icon-btn" id="btnNext" type="button" aria-label="Next song">
-        ⏭
-      </button>
+    <button class="icon-btn" id="btnNext" type="button" aria-label="Next song">
+      <svg class="player-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M17 5v14"></path>
+        <path d="M5 6l9 6-9 6V6z"></path>
+      </svg>
+    </button>
 	  
 	  <div class="player__track">
           <div class="player__meta">
