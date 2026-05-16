@@ -1165,7 +1165,7 @@ body{
 }
 
 .dresscode-card__title{
-  margin: 0.5;
+  margin: 0;
   font-family:"Great Vibes", cursive;
   font-size: clamp(28px, 8vw, 32px);
   line-height: .9;
@@ -1175,7 +1175,7 @@ body{
 }
 
 .dresscode-card__type{
-  margin-top: -5px;
+  margin-top: -6px;
   font-size: 13px;
   font-weight: 500;
 }
